@@ -73,7 +73,6 @@ import IconCta from '~/components/IconCta.vue'
 
 export default {
 
-    layout: 'singlecol',
     components: {
       IconCta
     }

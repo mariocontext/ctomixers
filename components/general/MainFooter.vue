@@ -3,7 +3,7 @@
   <footer class="footer" role="contentinfo">
     
     <p>
-      <sub> copyright 2018 All right reserved</sub>
+      <sub> copyright CTO Mixers 2018 All right reserved</sub>
     </p>
 
   </footer>
