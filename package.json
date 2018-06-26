@@ -1,7 +1,7 @@
 {
-  "name": "mybueproto",
+  "name": "ctomixers",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
+  "description": "CTO Mixers project",
   "author": "Mario Noble <mario@contextmultimedia.com>",
   "private": true,
   "scripts": {
