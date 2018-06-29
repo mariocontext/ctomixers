@@ -4,7 +4,7 @@
       <div class="logo-area">
           <img src="~static/images/cto_mixers_logo_color_with_text_white@1x.png" alt="CTO Mixer text with graphics of drinking glasses">
       </div>
-        <h1>General formatting - H1 Title Here</h1>
+        <h1>H1 Title Here</h1>
         <div class="section-bg-image">
           <span class="section-bg-image-caption">
             <p class="title is-3">Header image caption</p>

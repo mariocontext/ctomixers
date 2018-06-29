@@ -18,11 +18,11 @@
 
               <div class="navbar-menu" v-bind:class="{ 'is-active': menuActive }">
                 <span class="navbar-start">
-                  <router-link class="navbar-item" lang="en" to="/" v-on:click="toggleMenu">Home</router-link>
-                  <router-link class="navbar-item" lang="en" to="/services" v-on:click="toggleMenu">Services</router-link>
-                  <router-link class="navbar-item" lang="en" to="/faq" v-on:click="toggleMenu">FAQ</router-link>
-                  <router-link class="navbar-item" lang="en" to="/about" v-on:click="toggleMenu">About</router-link>
-                  <router-link class="navbar-item" lang="en" to="/contact" v-on:click="toggleMenu">Contact</router-link>
+                  <router-link class="navbar-item" lang="en" to="/" v-on:click.native="toggleMenu">Home</router-link>
+                  <router-link class="navbar-item" lang="en" to="/services" v-on:click.native="toggleMenu">Services</router-link>
+                  <router-link class="navbar-item" lang="en" to="/faq" v-on:click.native="toggleMenu">FAQ</router-link>
+                  <router-link class="navbar-item" lang="en" to="/about" v-on:click.native="toggleMenu">About</router-link>
+                  <router-link class="navbar-item" lang="en" to="/contact" v-on:click.native="toggleMenu">Contact</router-link>
 
                 </span>
                 <span class="navbar-end">
