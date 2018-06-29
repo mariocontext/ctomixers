@@ -105,7 +105,7 @@ $variable-columns: false;
 }
 
 // icon sizing because the npm install of font awesome uses fas. JS version produces vector. TODO: install and mess around with that implementation instead.
-
+/* removed since we're bringing in the js version inside nuxt.config.js
 .icon.is-small {
     font-size: 1em;
     margin: .5rem;
@@ -120,3 +120,4 @@ $variable-columns: false;
     font-size: 3em;
     margin: .75rem;
 }
+*/

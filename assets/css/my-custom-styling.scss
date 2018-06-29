@@ -5,38 +5,44 @@
 html, body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    color: #FFF;
 }
 
 p {
     font-size: 1rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
     margin-bottom: 1rem;
     line-height: 2rem;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Alfa Slab One','Roboto', sans-serif;
+    letter-spacing: 0.15rem; /* helps with Alfa readability */
+    color: #6A71E6;
+}
+
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
-    margin-bottom: .5rem;
-    color: #444;
+    margin-bottom: 1rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 3.2rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-top: 3.2rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 
 h4 {
-    margin-top: 2.2rem;
+    margin-top: 3.2rem;
     font-weight: 700;
-    font-size: .85rem;
+    font-size: 1rem;
 }
 
 h5 {
@@ -51,6 +57,12 @@ h6 {
     font-size: .5rem;
 }
 
+.main-content ul,
+.main-content ol
+{
+    margin:1.5rem 0;
+}
+
 .main-content {
     a {
 
@@ -58,16 +70,27 @@ h6 {
         -webkit-text-underline-position: under;
         -ms-text-underline-position: below;
         text-underline-position: under;
+        transition: all 0.5s ease;
         &:hover {
+            color: #0192FF;
             text-decoration: underline solid;
         }
     }
-    ul {
-        margin-top: .5rem
-    }
     li {
         margin-bottom: .75rem;
+        list-style-type: square;
+        margin-left: 1rem;
     }
+}
+
+.navbar-menu.is-active {
+    width: 80%;
+}
+
+.main-content.container {
+    max-width: 1023px!important;
+    margin: 8rem auto 2rem auto;
+    padding: 0 32px;
 }
 
 .container.is-fluid {
@@ -88,6 +111,60 @@ h6 {
     background-color: #DDD;
 }
 
+.card .content {
+    margin-top: 1rem;
+}
+
 section.box h2 {
     margin-top: 1rem;
+}
+
+button,
+.button,
+a.button,
+.card-footer a {
+    transition: all 0.5s ease;
+    text-decoration: none;
+    font-size: 1.25rem; /* making default font size the medium size */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 20rem;
+    &:hover {
+    text-decoration: none;
+    }
+}
+/* dark theme overrides of default */
+.button.is-text {
+    text-decoration: none;
+    color: #0192FF;
+    font-weight: 700;
+    &:hover {
+        text-decoration: none;
+    }
+}
+.button:hover, .button.is-hovered {
+    color: #000;
+}
+
+/* form size limits*/
+.main-content {
+    .control,
+    input.input,
+    textarea.text-area,
+    select,
+    {
+        max-width: 600px;
+    }
+}
+
+.checkbox, .radio {
+    line-height: 3.25;
+    &:hover {
+        color: #FFF;
+    }
+}
+
+.label {
+    color: #FFF;
 }

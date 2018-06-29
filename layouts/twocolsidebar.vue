@@ -4,17 +4,20 @@
     <main-header/>
 
     <div class="main-content container">
-      <main>
+      <main class="columns is-variable is-5">
 
-        <section class="general-content">
+        <section class="column general-content">
           <nuxt/>
         </section>
 
+        <aside class="column is-one-quarter secondary-content" role="complementary">
+          <main-sidebar/>
+        </aside>
       </main>
     </div>
 
     <main-footer/>
-
+    
 </span>
 
 </template>
@@ -39,5 +42,6 @@ export default {
 
 
 <style scoped>
+
 
 </style>

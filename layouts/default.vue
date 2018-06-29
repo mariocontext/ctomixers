@@ -3,21 +3,18 @@
   <span>
     <main-header/>
 
-    <div class="main-content container is-fluid">
-      <main class="columns is-variable is-5">
+    <div class="main-content container">
+      <main>
 
-        <section class="column general-content">
+        <section class="general-content">
           <nuxt/>
         </section>
 
-        <aside class="column is-one-quarter secondary-content" role="complementary">
-          <main-sidebar/>
-        </aside>
       </main>
     </div>
 
     <main-footer/>
-    
+
 </span>
 
 </template>
@@ -25,14 +22,12 @@
 <script>
   
 import MainHeader from '../components/general/MainHeader.vue'
-import MainSidebar from '../components/general/MainSidebar.vue'
 import MainFooter from '../components/general/MainFooter.vue'
   
 export default {
   
   components: {
     MainHeader,
-    MainSidebar,
     MainFooter
   }
   
@@ -41,7 +36,6 @@ export default {
 </script>
 
 
-<style scoped>
-
+<style land="scss" scoped>
 
 </style>

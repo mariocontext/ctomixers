@@ -4,22 +4,9 @@
 
         <nav class="navbar main-navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-
-              <div class="navbar-menu" v-bind:class="{ 'is-active': menuActive }">
-                <span class="navbar-start">
-                  <router-link class="navbar-item" lang="en" to="/">Home</router-link>
-                  <router-link class="navbar-item" lang="en" to="/services">Services</router-link>
-                  <router-link class="navbar-item" lang="en" to="/faq">FAQ</router-link>
-                  <router-link class="navbar-item" lang="en" to="/about">About</router-link>
-                  <router-link class="navbar-item" lang="en" to="/contact">Contact</router-link>
-                </span>
-                <span class="navbar-end">
-                  <a class="navbar-item" lang="en" href="http://www.facebook.com/" aria-label="Facebook"><b-icon icon="facebook" size="is-small" aria-hidden="true">
-                  </b-icon></a>
-                  <a class="navbar-item" lang="en" href="http://www.twitter.com/" aria-label="Twitter"><b-icon icon="twitter" size="is-small" aria-hidden="true"></b-icon></a>
-                  <a class="navbar-item" lang="en" href="https://www.youtube.com/" aria-label="YouTube"><b-icon icon="youtube-play" size="is-small" aria-hidden="true"></b-icon></a>
-                </span>
-              </div>
+              <router-link class="navbar-item logo" lang="en" to="/">
+                    <img src="~static/images/cto_mixers_logo_color.png" alt="CTO Mixer logo with graphics of drinking glasses">
+              </router-link>
               <a role="button" class="navbar-burger" v-on:click="toggleMenu" v-bind:class="{ 'is-active': menuActive }" aria-label="menu" aria-expanded="false">
                 <div>
                   <span aria-hidden="true"></span>
@@ -28,6 +15,19 @@
                 </div>
               </a>
             </div>
+
+              <div class="navbar-menu" v-bind:class="{ 'is-active': menuActive }">
+                <span class="navbar-start">
+                  <router-link class="navbar-item" lang="en" to="/" v-on:click="toggleMenu">Home</router-link>
+                  <router-link class="navbar-item" lang="en" to="/services" v-on:click="toggleMenu">Services</router-link>
+                  <router-link class="navbar-item" lang="en" to="/faq" v-on:click="toggleMenu">FAQ</router-link>
+                  <router-link class="navbar-item" lang="en" to="/about" v-on:click="toggleMenu">About</router-link>
+                  <router-link class="navbar-item" lang="en" to="/contact" v-on:click="toggleMenu">Contact</router-link>
+
+                </span>
+                <span class="navbar-end">
+                </span>
+              </div>
         </nav>   
   </header>
 
@@ -62,14 +62,13 @@
 .main-navbar a {
   transition: all 0.5s ease;
     &:hover {
-      color: #DDD;
-      background-color: #333;
+      color: #0192FF;
+      background-color: #000;
   }
 }
 
 nav .navbar-item.nuxt-link-exact-active {
-      color: #333;
-      background-color: #DDD;
+  color: #0192FF;
 }
 header {
   position: fixed;
@@ -80,28 +79,38 @@ header {
 
 nav {
 
-  background: #F5F5F5;
+  background: #000;
   font-size: 1.2rem;
+
+  .navbar-menu.is-active {
+    width: 100%;
+  }
 
   .navbar-brand {
     margin: 0 auto;
   }
 
   .navbar-item {
-    color: #333;
-    height: 5rem;
+    color: #FFF;
+    padding: 2rem;
+  }
+
+  .navbar-start .navbar-item {
+    border-bottom: 1px solid #333;
   }
 
 }
 
 .navbar-burger {
-  
-  right: 1rem;
-
+  align-self: center;
+  margin-right: 1rem;
   span {
     height: 3px;
   }
+}
 
+.main-navbar {
+  opacity: .85;
 }
 
 </style>

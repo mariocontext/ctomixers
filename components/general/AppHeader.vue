@@ -15,12 +15,6 @@
                   <router-link class="navbar-item" lang="en" to="/about">About</router-link>
                   <router-link class="navbar-item" lang="en" to="/contact">Contact</router-link>
                 </span>
-                <span class="navbar-end">
-                  <a class="navbar-item" lang="en" href="http://www.facebook.com/" aria-label="Facebook"><b-icon icon="facebook" size="is-small" aria-hidden="true">
-                  </b-icon></a>
-                  <a class="navbar-item" lang="en" href="http://www.twitter.com/" aria-label="Twitter"><b-icon icon="twitter" size="is-small" aria-hidden="true"></b-icon></a>
-                  <a class="navbar-item" lang="en" href="https://www.youtube.com/" aria-label="YouTube"><b-icon icon="youtube-play" size="is-small" aria-hidden="true"></b-icon></a>
-                </span>
               </div>
 
               <a role="button" class="navbar-burger" v-on:click="toggleMenu" v-bind:class="{ 'is-active': menuActive }" aria-label="menu" aria-expanded="false">
