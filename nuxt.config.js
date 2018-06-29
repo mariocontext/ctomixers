@@ -9,11 +9,14 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Prototyped project' }
     ],
+    script: [
+      { src: 'https://use.fontawesome.com/releases/v5.0.7/js/all.js'}
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href:'https://fonts.googleapis.com/css?family=Roboto'},
       { rel: 'stylesheet', href:'//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css'},
-      { rel: 'stylesheet', href:'https://fonts.googleapis.com/css?family=Montserrat:400,400i,500i,600,700'}
+      { rel: 'stylesheet', href:'https://fonts.googleapis.com/css?family=Alfa+Slab+One|Quicksand'}
     ]
   },
   css: [
@@ -29,7 +32,7 @@ module.exports = {
   */
   modules: [
     // Simple usage
-    ['nuxt-buefy', { css: true, materialDesignIcons: true }]
+    ['nuxt-buefy', { css: false, materialDesignIcons: true }]
 ],
 
   /*

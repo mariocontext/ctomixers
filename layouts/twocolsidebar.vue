@@ -3,7 +3,7 @@
   <span>
     <main-header/>
 
-    <div class="main-content container is-fluid">
+    <div class="main-content container">
       <main class="columns is-variable is-5">
 
         <section class="column general-content">

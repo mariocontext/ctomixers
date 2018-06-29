@@ -3,7 +3,7 @@
   <span>
     <main-header/>
 
-    <div class="main-content container is-fluid">
+    <div class="main-content container">
       <main>
 
         <section class="general-content">

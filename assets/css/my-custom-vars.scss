@@ -1,4 +1,17 @@
 /* custom vars go here */
 
-$primary: #000;
-$link: #000;
+$primary: #0192FF;
+$primary-invert: findColorInvert($primary);
+$background: $grey-darker;
+$body-background-color: $grey-darker;
+$text-strong: #FFF;
+$link-hover: #FFF;
+$link-active: #FFF;
+$link-focus: #FFF;
+
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+$navbar-background-color: #000;
+
