@@ -39,7 +39,7 @@
 .footer {
   margin-top: 2rem;
   text-align: center;
-  background-color: #363636;
+  background-color: #000;
 }
 
 .social-links {
