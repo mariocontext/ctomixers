@@ -177,7 +177,7 @@
         <div class="card call-to-action column is-one-third">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              <img src="~static/images/pexels-photo-613037.jpeg" alt="Placeholder image">
             </figure>
           </div>
           <div class="content">
@@ -186,14 +186,14 @@
               <a href="#">#css</a> <a href="#">#responsive</a>
           </div>
           <footer class="card-footer">
-              <a href="#" class="card-footer-item">Call to Action</a>
+              <a href="#" class="card-footer-item button is-primary">Call to Action</a>
             </footer>
         </div>
 
         <div class="card call-to-action column is-one-third">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              <img src="~static/images/pexels-photo-860227.jpeg" alt="Placeholder image">
             </figure>
           </div>
           <div class="content">
@@ -202,14 +202,14 @@
               <a href="#">#css</a> <a href="#">#responsive</a>
           </div>
           <footer class="card-footer">
-              <a href="#" class="card-footer-item">Call to Action</a>
+              <a href="#" class="card-footer-item button is-primary">Call to Action</a>
             </footer>
         </div>
 
         <div class="card call-to-action column is-one-third">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+              <img src="~static/images/pexels-photo-989699.jpeg" alt="Placeholder image">
             </figure>
           </div>
           <div class="content">
@@ -218,7 +218,7 @@
               <a href="#">#css</a> <a href="#">#responsive</a>
           </div>
           <footer class="card-footer">
-              <a href="#" class="card-footer-item">Call to Action</a>
+              <a href="#" class="card-footer-item button is-primary">Call to Action</a>
             </footer>
         </div>
 
@@ -290,6 +290,8 @@ export default {
 .card.call-to-action.column {
     margin: 1rem .5rem;
     border-radius: 10px;
+    padding: 1rem;
+    border: 4px solid #6A71E6;
     .card-footer{
       border-top: none;
     }

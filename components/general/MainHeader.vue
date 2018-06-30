@@ -96,7 +96,11 @@ nav {
   }
 
   .navbar-start .navbar-item {
-    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    @media screen and (min-width: 1088px) {
+      border-top: none;
+    }
+    
   }
 
 }

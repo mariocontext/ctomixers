@@ -2,10 +2,15 @@
 
 /* TYPOGRPAHY */
 
-html, body {
+html,body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #FFF;
+    background: #000;
+}
+
+body {
+    background: url('~static/images/spiration_gradient.png') repeat-x;
 }
 
 p {
@@ -30,7 +35,7 @@ h1 {
 h2 {
     font-size: 1.75rem;
     margin-top: 3.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 h3 {
@@ -77,6 +82,7 @@ h6 {
         margin-bottom: .75rem;
         list-style-type: square;
         margin-left: 1rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -86,8 +92,8 @@ h6 {
 
 .main-content.container {
     max-width: 1023px!important;
-    margin: 8rem auto 2rem auto;
-    padding: 0 32px;
+    margin: 5rem auto 2rem auto;
+    padding: 32px;
 }
 
 .container.is-fluid {
@@ -98,6 +104,8 @@ h6 {
 .main-content {
     margin-top: 8rem;
     margin-bottom: 2rem;
+
+    
 }
 
 .main-content .section {
@@ -152,6 +160,7 @@ a.button,
     select,
     {
         max-width: 600px;
+        font-size: 1.5rem;
     }
 }
 
